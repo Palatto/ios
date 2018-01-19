@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Promotion Dialog View Controller-->
+        <scene sceneID="6vL-iy-7oD">
+            <objects>
+                <viewController storyboardIdentifier="AddPromotionDialog" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vvu-Dg-9De" customClass="AddPromotionDialogViewController" customModule="PlateiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oMQ-Dh-AcP"/>
+                        <viewControllerLayoutGuide type="bottom" id="qW9-kY-Dgp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8qJ-M3-LkR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bmg-iF-3Ge" userLabel="Background View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jGf-Zg-aTq" userLabel="Add Promotion Dialog">
+                                <rect key="frame" x="32.5" y="188.5" width="310" height="290"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="290" id="b44-m8-3ca"/>
+                                    <constraint firstAttribute="width" constant="310" id="c0W-Bd-kgN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bmg-iF-3Ge" firstAttribute="top" secondItem="8qJ-M3-LkR" secondAttribute="top" id="0wd-EA-cj4"/>
+                            <constraint firstItem="jGf-Zg-aTq" firstAttribute="centerY" secondItem="8qJ-M3-LkR" secondAttribute="centerY" id="Dza-FN-5Va"/>
+                            <constraint firstItem="bmg-iF-3Ge" firstAttribute="leading" secondItem="8qJ-M3-LkR" secondAttribute="leading" id="Ebb-f5-Ihh"/>
+                            <constraint firstItem="jGf-Zg-aTq" firstAttribute="centerX" secondItem="8qJ-M3-LkR" secondAttribute="centerX" id="XWb-pb-l8g"/>
+                            <constraint firstItem="qW9-kY-Dgp" firstAttribute="top" secondItem="bmg-iF-3Ge" secondAttribute="bottom" id="lt8-ys-40f"/>
+                            <constraint firstAttribute="trailing" secondItem="bmg-iF-3Ge" secondAttribute="trailing" id="ycu-HZ-VQ0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="c3W-Fb-GA9"/>
+                    </view>
+                    <connections>
+                        <outlet property="addPromotionDialog" destination="jGf-Zg-aTq" id="4rz-dD-SuF"/>
+                        <outlet property="backgroundView" destination="bmg-iF-3Ge" id="fSS-JA-sig"/>
+                        <outlet property="constraintOffset" destination="Dza-FN-5Va" id="aGs-rO-nFx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O57-sV-XGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28" y="-331.48425787106447"/>
+        </scene>
+    </scenes>
+</document>

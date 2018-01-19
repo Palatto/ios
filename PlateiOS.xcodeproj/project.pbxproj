@@ -7,21 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		011D4FF61FEE6BEE00697697 /* plate splash screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 011D4FF51FEE6BEE00697697 /* plate splash screen.png */; };
-		011D4FF81FEE6C4500697697 /* plate logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 011D4FF71FEE6C4500697697 /* plate logo.png */; };
-		011D4FFA1FEE6D8200697697 /* plate color.png in Resources */ = {isa = PBXBuildFile; fileRef = 011D4FF91FEE6D8200697697 /* plate color.png */; };
 		01241B911FB7B13C0043E206 /* PromotionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01241B901FB7B13C0043E206 /* PromotionModel.swift */; };
-		0152EC6C1FEF12210039F15E /* logo plate real.png in Resources */ = {isa = PBXBuildFile; fileRef = 0152EC6B1FEF12210039F15E /* logo plate real.png */; };
-		0159DED41FF834DB00339143 /* AddPromotionPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0159DED31FF834DA00339143 /* AddPromotionPopUp.xib */; };
-		0159DED71FF8350D00339143 /* AddPromotionPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0159DED61FF8350D00339143 /* AddPromotionPopUp.swift */; };
-		0159DED91FF8355100339143 /* AddPromotionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0159DED81FF8355100339143 /* AddPromotionController.swift */; };
-		0159DEDB1FF8356200339143 /* AddPromotion.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0159DEDA1FF8356200339143 /* AddPromotion.storyboard */; };
-		018EF15B1FF1C887009E6B89 /* ConfirmationMessage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 018EF15A1FF1C887009E6B89 /* ConfirmationMessage.storyboard */; };
-		018EF16A1FF1CFAA009E6B89 /* ConfirmationPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 018EF1691FF1CFAA009E6B89 /* ConfirmationPopUp.xib */; };
-		018EF16C1FF1CFCA009E6B89 /* ConfirmationPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018EF16B1FF1CFCA009E6B89 /* ConfirmationPopUp.swift */; };
-		018EF16E1FF1D217009E6B89 /* ConfirmationMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018EF16D1FF1D217009E6B89 /* ConfirmationMessageController.swift */; };
-		018EF1721FF1D803009E6B89 /* ViewCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018EF1711FF1D803009E6B89 /* ViewCreatable.swift */; };
+		0145DC7720120CC6007EE658 /* LobsterTwo-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0145DC7620120CC6007EE658 /* LobsterTwo-Regular.otf */; };
+		01B10BD1200D56CB0097CDA6 /* logo plate real.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B10BD0200D56CB0097CDA6 /* logo plate real.png */; };
 		75A4688C13E414DDCF13C501 /* Pods_PlateiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 349EA05B303BB49710EBC5EA /* Pods_PlateiOS.framework */; };
+		DB1CE736200418AE00784ECF /* AddPromotionDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1CE735200418AD00784ECF /* AddPromotionDialogViewController.swift */; };
+		DB1CE73A2004194100784ECF /* InputPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1CE7392004194100784ECF /* InputPopUp.swift */; };
+		DB1CE73C2004194F00784ECF /* InputPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB1CE73B2004194F00784ECF /* InputPopUp.xib */; };
+		DB1CE73E20041A4E00784ECF /* AddPromotionDialog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB1CE73D20041A4E00784ECF /* AddPromotionDialog.storyboard */; };
 		DB530B721FC3765200FCB77D /* PromotionListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB530B711FC3765200FCB77D /* PromotionListDataSource.swift */; };
 		DB530B741FC3766200FCB77D /* PromotionListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB530B731FC3766200FCB77D /* PromotionListDelegate.swift */; };
 		DB5A4E671FCE812200DCDACA /* LoginPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5A4E661FCE812200DCDACA /* LoginPageController.swift */; };
@@ -30,35 +23,36 @@
 		DB5A4E701FCF4C7100DCDACA /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5A4E6F1FCF4C7100DCDACA /* LoginPageViewController.swift */; };
 		DB87C6AC1FD2868A00C2B0C4 /* LoginPageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB87C6AB1FD2868A00C2B0C4 /* LoginPageService.swift */; };
 		DB87C6AE1FD286A200C2B0C4 /* PromotionListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB87C6AD1FD286A200C2B0C4 /* PromotionListService.swift */; };
+		DBA92F03200ADB9800D34E47 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA92F02200ADB9800D34E47 /* SplashScreenViewController.swift */; };
+		DBA92F06200ADE2300D34E47 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA92F05200ADE2300D34E47 /* SplashScreen.storyboard */; };
+		DBAB093C1FF15117008E0A2A /* PlateColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAB093B1FF15117008E0A2A /* PlateColors.swift */; };
 		DBBB28F21FBFD8A100922BB2 /* PromotionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBB28F01FBFD8A100922BB2 /* PromotionCell.swift */; };
 		DBBB28F31FBFD8A100922BB2 /* PromotionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBBB28F11FBFD8A100922BB2 /* PromotionCell.xib */; };
 		DBBB28F51FBFDCA000922BB2 /* PromotionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBB28F41FBFDCA000922BB2 /* PromotionListViewController.swift */; };
 		DBBB28F71FBFE66F00922BB2 /* PromotionListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBBB28F61FBFE66F00922BB2 /* PromotionListModel.swift */; };
+		DBCAE8A120030CE60050D476 /* NoFoodDialog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBCAE8A020030CE60050D476 /* NoFoodDialog.storyboard */; };
+		DBCAE8A320030DCF0050D476 /* NoFoodDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCAE8A220030DCF0050D476 /* NoFoodDialogViewController.swift */; };
+		DBCAE8A520030F1A0050D476 /* ViewCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCAE8A420030F1A0050D476 /* ViewCreatable.swift */; };
+		DBCAE8AA2003CEFF0050D476 /* ConfirmationPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCAE8A92003CEFF0050D476 /* ConfirmationPopUp.swift */; };
+		DBCAE8AE2003CF880050D476 /* ConfirmationPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBCAE8AD2003CF880050D476 /* ConfirmationPopUp.xib */; };
+		DBCF23DB200AEAE0000942CC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DBCF23DA200AEADF000942CC /* Default-568h@2x.png */; };
 		DBECFB921F99DC9D0081C09A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECFB911F99DC9D0081C09A /* AppDelegate.swift */; };
 		DBECFB971F99DC9D0081C09A /* LoginPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBECFB951F99DC9D0081C09A /* LoginPage.storyboard */; };
 		DBECFB991F99DC9D0081C09A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBECFB981F99DC9D0081C09A /* Assets.xcassets */; };
-		DBECFB9C1F99DC9D0081C09A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBECFB9A1F99DC9D0081C09A /* LaunchScreen.storyboard */; };
 		DBECFBA41F99E93B0081C09A /* PromotionListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECFBA31F99E93B0081C09A /* PromotionListProtocol.swift */; };
 		DBECFBA61F99E95A0081C09A /* PromotionListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECFBA51F99E95A0081C09A /* PromotionListController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		011D4FF51FEE6BEE00697697 /* plate splash screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plate splash screen.png"; sourceTree = "<group>"; };
-		011D4FF71FEE6C4500697697 /* plate logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plate logo.png"; sourceTree = "<group>"; };
-		011D4FF91FEE6D8200697697 /* plate color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plate color.png"; sourceTree = "<group>"; };
 		01241B901FB7B13C0043E206 /* PromotionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionModel.swift; sourceTree = "<group>"; };
-		0152EC6B1FEF12210039F15E /* logo plate real.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo plate real.png"; sourceTree = "<group>"; };
-		0159DED31FF834DA00339143 /* AddPromotionPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddPromotionPopUp.xib; sourceTree = "<group>"; };
-		0159DED61FF8350D00339143 /* AddPromotionPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPromotionPopUp.swift; sourceTree = "<group>"; };
-		0159DED81FF8355100339143 /* AddPromotionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPromotionController.swift; sourceTree = "<group>"; };
-		0159DEDA1FF8356200339143 /* AddPromotion.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddPromotion.storyboard; sourceTree = "<group>"; };
-		018EF15A1FF1C887009E6B89 /* ConfirmationMessage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConfirmationMessage.storyboard; sourceTree = "<group>"; };
-		018EF1691FF1CFAA009E6B89 /* ConfirmationPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmationPopUp.xib; sourceTree = "<group>"; };
-		018EF16B1FF1CFCA009E6B89 /* ConfirmationPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationPopUp.swift; sourceTree = "<group>"; };
-		018EF16D1FF1D217009E6B89 /* ConfirmationMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationMessageController.swift; sourceTree = "<group>"; };
-		018EF1711FF1D803009E6B89 /* ViewCreatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCreatable.swift; sourceTree = "<group>"; };
+		0145DC7620120CC6007EE658 /* LobsterTwo-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LobsterTwo-Regular.otf"; sourceTree = "<group>"; };
+		01B10BD0200D56CB0097CDA6 /* logo plate real.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo plate real.png"; path = "../../../new screenshots/logo plate real.png"; sourceTree = "<group>"; };
 		349EA05B303BB49710EBC5EA /* Pods_PlateiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlateiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70B350CA7D606F91FC3F7F7A /* Pods-PlateiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlateiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlateiOS/Pods-PlateiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		DB1CE735200418AD00784ECF /* AddPromotionDialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPromotionDialogViewController.swift; sourceTree = "<group>"; };
+		DB1CE7392004194100784ECF /* InputPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPopUp.swift; sourceTree = "<group>"; };
+		DB1CE73B2004194F00784ECF /* InputPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputPopUp.xib; sourceTree = "<group>"; };
+		DB1CE73D20041A4E00784ECF /* AddPromotionDialog.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddPromotionDialog.storyboard; sourceTree = "<group>"; };
 		DB530B711FC3765200FCB77D /* PromotionListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionListDataSource.swift; sourceTree = "<group>"; };
 		DB530B731FC3766200FCB77D /* PromotionListDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionListDelegate.swift; sourceTree = "<group>"; };
 		DB5A4E661FCE812200DCDACA /* LoginPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageController.swift; sourceTree = "<group>"; };
@@ -67,15 +61,23 @@
 		DB5A4E6F1FCF4C7100DCDACA /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 		DB87C6AB1FD2868A00C2B0C4 /* LoginPageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageService.swift; sourceTree = "<group>"; };
 		DB87C6AD1FD286A200C2B0C4 /* PromotionListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionListService.swift; sourceTree = "<group>"; };
+		DBA92F02200ADB9800D34E47 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		DBA92F05200ADE2300D34E47 /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
+		DBAB093B1FF15117008E0A2A /* PlateColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateColors.swift; sourceTree = "<group>"; };
 		DBBB28F01FBFD8A100922BB2 /* PromotionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionCell.swift; sourceTree = "<group>"; };
 		DBBB28F11FBFD8A100922BB2 /* PromotionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromotionCell.xib; sourceTree = "<group>"; };
 		DBBB28F41FBFDCA000922BB2 /* PromotionListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromotionListViewController.swift; sourceTree = "<group>"; };
 		DBBB28F61FBFE66F00922BB2 /* PromotionListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionListModel.swift; sourceTree = "<group>"; };
+		DBCAE8A020030CE60050D476 /* NoFoodDialog.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NoFoodDialog.storyboard; sourceTree = "<group>"; };
+		DBCAE8A220030DCF0050D476 /* NoFoodDialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoFoodDialogViewController.swift; sourceTree = "<group>"; };
+		DBCAE8A420030F1A0050D476 /* ViewCreatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCreatable.swift; sourceTree = "<group>"; };
+		DBCAE8A92003CEFF0050D476 /* ConfirmationPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationPopUp.swift; sourceTree = "<group>"; };
+		DBCAE8AD2003CF880050D476 /* ConfirmationPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmationPopUp.xib; sourceTree = "<group>"; };
+		DBCF23DA200AEADF000942CC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		DBECFB8E1F99DC9D0081C09A /* PlateiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlateiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBECFB911F99DC9D0081C09A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBECFB961F99DC9D0081C09A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LoginPage.storyboard; sourceTree = "<group>"; };
 		DBECFB981F99DC9D0081C09A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DBECFB9B1F99DC9D0081C09A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBECFB9D1F99DC9D0081C09A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBECFBA31F99E93B0081C09A /* PromotionListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionListProtocol.swift; sourceTree = "<group>"; };
 		DBECFBA51F99E95A0081C09A /* PromotionListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionListController.swift; sourceTree = "<group>"; };
@@ -97,73 +99,13 @@
 		0110FB7D1FAE4E2C00801C9A /* PromotionList */ = {
 			isa = PBXGroup;
 			children = (
-				0152EC741FEF14330039F15E /* PopUp */,
-				DBBB28ED1FBFD84100922BB2 /* Cell */,
-				018EF1741FF1E367009E6B89 /* PromotionList */,
-			);
-			path = PromotionList;
-			sourceTree = "<group>";
-		};
-		0152EC741FEF14330039F15E /* PopUp */ = {
-			isa = PBXGroup;
-			children = (
-				0159DED21FF834B000339143 /* AddPromotion */,
-				018EF1731FF1E329009E6B89 /* ConfirmationMessage */,
-			);
-			path = PopUp;
-			sourceTree = "<group>";
-		};
-		0159DED21FF834B000339143 /* AddPromotion */ = {
-			isa = PBXGroup;
-			children = (
-				0159DEDA1FF8356200339143 /* AddPromotion.storyboard */,
-				0159DED81FF8355100339143 /* AddPromotionController.swift */,
-				0159DED51FF834EC00339143 /* AddPromotionPopUp */,
-			);
-			path = AddPromotion;
-			sourceTree = "<group>";
-		};
-		0159DED51FF834EC00339143 /* AddPromotionPopUp */ = {
-			isa = PBXGroup;
-			children = (
-				0159DED31FF834DA00339143 /* AddPromotionPopUp.xib */,
-				0159DED61FF8350D00339143 /* AddPromotionPopUp.swift */,
-			);
-			path = AddPromotionPopUp;
-			sourceTree = "<group>";
-		};
-		018EF15C1FF1C97E009E6B89 /* ConfirmationPopUp */ = {
-			isa = PBXGroup;
-			children = (
-				018EF1691FF1CFAA009E6B89 /* ConfirmationPopUp.xib */,
-				018EF16B1FF1CFCA009E6B89 /* ConfirmationPopUp.swift */,
-			);
-			path = ConfirmationPopUp;
-			sourceTree = "<group>";
-		};
-		018EF1731FF1E329009E6B89 /* ConfirmationMessage */ = {
-			isa = PBXGroup;
-			children = (
-				018EF15A1FF1C887009E6B89 /* ConfirmationMessage.storyboard */,
-				018EF1711FF1D803009E6B89 /* ViewCreatable.swift */,
-				018EF16D1FF1D217009E6B89 /* ConfirmationMessageController.swift */,
-				018EF15C1FF1C97E009E6B89 /* ConfirmationPopUp */,
-			);
-			path = ConfirmationMessage;
-			sourceTree = "<group>";
-		};
-		018EF1741FF1E367009E6B89 /* PromotionList */ = {
-			isa = PBXGroup;
-			children = (
+				DBCAE89F20030B990050D476 /* Complements */,
 				DBBB28F41FBFDCA000922BB2 /* PromotionListViewController.swift */,
 				01241B901FB7B13C0043E206 /* PromotionModel.swift */,
 				DBBB28F61FBFE66F00922BB2 /* PromotionListModel.swift */,
 				DBECFBA51F99E95A0081C09A /* PromotionListController.swift */,
 				DBECFBA31F99E93B0081C09A /* PromotionListProtocol.swift */,
-				DB530B711FC3765200FCB77D /* PromotionListDataSource.swift */,
-				DB530B731FC3766200FCB77D /* PromotionListDelegate.swift */,
-				DB5A4E6C1FCE81C800DCDACA /* PromotionList.storyboard */,
-				DB87C6AD1FD286A200C2B0C4 /* PromotionListService.swift */,
+				01B10BD0200D56CB0097CDA6 /* logo plate real.png */,
 			);
 			path = PromotionList;
 			sourceTree = "<group>";
@@ -192,16 +134,54 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DB1CE7342004187400784ECF /* AddPromotionDialog */ = {
+			isa = PBXGroup;
+			children = (
+				DB1CE735200418AD00784ECF /* AddPromotionDialogViewController.swift */,
+				DB1CE73D20041A4E00784ECF /* AddPromotionDialog.storyboard */,
+				DB1CE7392004194100784ECF /* InputPopUp.swift */,
+				DB1CE73B2004194F00784ECF /* InputPopUp.xib */,
+			);
+			path = AddPromotionDialog;
+			sourceTree = "<group>";
+		};
+		DB43EF3D1FF0157400EDD192 /* Complements */ = {
+			isa = PBXGroup;
+			children = (
+				DBA92F04200ADBA800D34E47 /* SplashScreen */,
+				DB87C6AB1FD2868A00C2B0C4 /* LoginPageService.swift */,
+			);
+			path = Complements;
+			sourceTree = "<group>";
+		};
 		DB5A4E651FCE804800DCDACA /* LoginPage */ = {
 			isa = PBXGroup;
 			children = (
+				DB43EF3D1FF0157400EDD192 /* Complements */,
 				DB5A4E681FCE814100DCDACA /* LoginPageProtocol.swift */,
 				DB5A4E661FCE812200DCDACA /* LoginPageController.swift */,
 				DB5A4E6F1FCF4C7100DCDACA /* LoginPageViewController.swift */,
 				DBECFB951F99DC9D0081C09A /* LoginPage.storyboard */,
-				DB87C6AB1FD2868A00C2B0C4 /* LoginPageService.swift */,
 			);
 			path = LoginPage;
+			sourceTree = "<group>";
+		};
+		DBA92F04200ADBA800D34E47 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DBA92F02200ADB9800D34E47 /* SplashScreenViewController.swift */,
+				DBA92F05200ADE2300D34E47 /* SplashScreen.storyboard */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		DBAB093A1FF150DC008E0A2A /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				DBAB093B1FF15117008E0A2A /* PlateColors.swift */,
+				DBCAE8A420030F1A0050D476 /* ViewCreatable.swift */,
+			);
+			path = Commons;
 			sourceTree = "<group>";
 		};
 		DBBB28ED1FBFD84100922BB2 /* Cell */ = {
@@ -213,9 +193,42 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		DBCAE89F20030B990050D476 /* Complements */ = {
+			isa = PBXGroup;
+			children = (
+				DBBB28ED1FBFD84100922BB2 /* Cell */,
+				DBCAE8A62003CC340050D476 /* Dialogs */,
+				DB530B711FC3765200FCB77D /* PromotionListDataSource.swift */,
+				DB530B731FC3766200FCB77D /* PromotionListDelegate.swift */,
+				DB87C6AD1FD286A200C2B0C4 /* PromotionListService.swift */,
+			);
+			path = Complements;
+			sourceTree = "<group>";
+		};
+		DBCAE8A62003CC340050D476 /* Dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				DB1CE7342004187400784ECF /* AddPromotionDialog */,
+				DBCAE8A72003CEBC0050D476 /* NoFoodDialog */,
+			);
+			path = Dialogs;
+			sourceTree = "<group>";
+		};
+		DBCAE8A72003CEBC0050D476 /* NoFoodDialog */ = {
+			isa = PBXGroup;
+			children = (
+				DBCAE8A220030DCF0050D476 /* NoFoodDialogViewController.swift */,
+				DBCAE8A020030CE60050D476 /* NoFoodDialog.storyboard */,
+				DBCAE8A92003CEFF0050D476 /* ConfirmationPopUp.swift */,
+				DBCAE8AD2003CF880050D476 /* ConfirmationPopUp.xib */,
+			);
+			path = NoFoodDialog;
+			sourceTree = "<group>";
+		};
 		DBECFB851F99DC9D0081C09A = {
 			isa = PBXGroup;
 			children = (
+				DBCF23DA200AEADF000942CC /* Default-568h@2x.png */,
 				DBECFB901F99DC9D0081C09A /* PlateiOS */,
 				DBECFB8F1F99DC9D0081C09A /* Products */,
 				01A8CFA41FAE6CC500520E5B /* Kits */,
@@ -235,15 +248,13 @@
 		DBECFB901F99DC9D0081C09A /* PlateiOS */ = {
 			isa = PBXGroup;
 			children = (
+				DBAB093A1FF150DC008E0A2A /* Commons */,
 				DB5A4E651FCE804800DCDACA /* LoginPage */,
 				0110FB7D1FAE4E2C00801C9A /* PromotionList */,
 				DBECFB911F99DC9D0081C09A /* AppDelegate.swift */,
+				DB5A4E6C1FCE81C800DCDACA /* PromotionList.storyboard */,
+				0145DC7620120CC6007EE658 /* LobsterTwo-Regular.otf */,
 				DBECFB981F99DC9D0081C09A /* Assets.xcassets */,
-				011D4FF91FEE6D8200697697 /* plate color.png */,
-				011D4FF71FEE6C4500697697 /* plate logo.png */,
-				0152EC6B1FEF12210039F15E /* logo plate real.png */,
-				011D4FF51FEE6BEE00697697 /* plate splash screen.png */,
-				DBECFB9A1F99DC9D0081C09A /* LaunchScreen.storyboard */,
 				DBECFB9D1F99DC9D0081C09A /* Info.plist */,
 			);
 			path = PlateiOS;
@@ -311,19 +322,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				011D4FF81FEE6C4500697697 /* plate logo.png in Resources */,
-				0159DED41FF834DB00339143 /* AddPromotionPopUp.xib in Resources */,
 				DBBB28F31FBFD8A100922BB2 /* PromotionCell.xib in Resources */,
-				DBECFB9C1F99DC9D0081C09A /* LaunchScreen.storyboard in Resources */,
-				0159DEDB1FF8356200339143 /* AddPromotion.storyboard in Resources */,
-				0152EC6C1FEF12210039F15E /* logo plate real.png in Resources */,
 				DB5A4E6D1FCE81C800DCDACA /* PromotionList.storyboard in Resources */,
-				018EF15B1FF1C887009E6B89 /* ConfirmationMessage.storyboard in Resources */,
-				018EF16A1FF1CFAA009E6B89 /* ConfirmationPopUp.xib in Resources */,
+				DBA92F06200ADE2300D34E47 /* SplashScreen.storyboard in Resources */,
+				DBCF23DB200AEAE0000942CC /* Default-568h@2x.png in Resources */,
+				DB1CE73E20041A4E00784ECF /* AddPromotionDialog.storyboard in Resources */,
+				0145DC7720120CC6007EE658 /* LobsterTwo-Regular.otf in Resources */,
 				DBECFB991F99DC9D0081C09A /* Assets.xcassets in Resources */,
+				DB1CE73C2004194F00784ECF /* InputPopUp.xib in Resources */,
+				DBCAE8AE2003CF880050D476 /* ConfirmationPopUp.xib in Resources */,
+				DBCAE8A120030CE60050D476 /* NoFoodDialog.storyboard in Resources */,
 				DBECFB971F99DC9D0081C09A /* LoginPage.storyboard in Resources */,
-				011D4FF61FEE6BEE00697697 /* plate splash screen.png in Resources */,
-				011D4FFA1FEE6D8200697697 /* plate color.png in Resources */,
+				01B10BD1200D56CB0097CDA6 /* logo plate real.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,24 +399,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB5A4E671FCE812200DCDACA /* LoginPageController.swift in Sources */,
+				DBCAE8AA2003CEFF0050D476 /* ConfirmationPopUp.swift in Sources */,
+				DBA92F03200ADB9800D34E47 /* SplashScreenViewController.swift in Sources */,
 				DB87C6AE1FD286A200C2B0C4 /* PromotionListService.swift in Sources */,
 				DBBB28F71FBFE66F00922BB2 /* PromotionListModel.swift in Sources */,
 				DBECFB921F99DC9D0081C09A /* AppDelegate.swift in Sources */,
 				DB87C6AC1FD2868A00C2B0C4 /* LoginPageService.swift in Sources */,
-				018EF1721FF1D803009E6B89 /* ViewCreatable.swift in Sources */,
+				DB1CE736200418AE00784ECF /* AddPromotionDialogViewController.swift in Sources */,
+				DB1CE73A2004194100784ECF /* InputPopUp.swift in Sources */,
 				DB5A4E691FCE814100DCDACA /* LoginPageProtocol.swift in Sources */,
 				DBBB28F21FBFD8A100922BB2 /* PromotionCell.swift in Sources */,
+				DBCAE8A320030DCF0050D476 /* NoFoodDialogViewController.swift in Sources */,
 				DBBB28F51FBFDCA000922BB2 /* PromotionListViewController.swift in Sources */,
 				DBECFBA61F99E95A0081C09A /* PromotionListController.swift in Sources */,
 				DB530B741FC3766200FCB77D /* PromotionListDelegate.swift in Sources */,
 				DBECFBA41F99E93B0081C09A /* PromotionListProtocol.swift in Sources */,
-				018EF16E1FF1D217009E6B89 /* ConfirmationMessageController.swift in Sources */,
 				DB5A4E701FCF4C7100DCDACA /* LoginPageViewController.swift in Sources */,
+				DBAB093C1FF15117008E0A2A /* PlateColors.swift in Sources */,
+				DBCAE8A520030F1A0050D476 /* ViewCreatable.swift in Sources */,
 				DB530B721FC3765200FCB77D /* PromotionListDataSource.swift in Sources */,
 				01241B911FB7B13C0043E206 /* PromotionModel.swift in Sources */,
-				0159DED71FF8350D00339143 /* AddPromotionPopUp.swift in Sources */,
-				0159DED91FF8355100339143 /* AddPromotionController.swift in Sources */,
-				018EF16C1FF1CFCA009E6B89 /* ConfirmationPopUp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,14 +431,6 @@
 				DBECFB961F99DC9D0081C09A /* Base */,
 			);
 			name = LoginPage.storyboard;
-			sourceTree = "<group>";
-		};
-		DBECFB9A1F99DC9D0081C09A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DBECFB9B1F99DC9D0081C09A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

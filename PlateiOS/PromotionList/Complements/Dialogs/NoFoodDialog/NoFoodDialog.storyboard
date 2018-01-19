@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--No Food Dialog View Controller-->
+        <scene sceneID="fS5-yg-hHa">
+            <objects>
+                <viewController storyboardIdentifier="NoFoodDialog" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aw8-aE-maT" customClass="NoFoodDialogViewController" customModule="PlateiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kcd-4f-ydZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="2g2-If-MB3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="or2-a2-Vgb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NWp-Mv-sSX" userLabel="Background View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QdO-zD-eaa" userLabel="No Food Dialog">
+                                <rect key="frame" x="32.5" y="233.5" width="310" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="310" id="WUW-5L-eec"/>
+                                    <constraint firstAttribute="height" constant="200" id="kKg-gY-2xW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2g2-If-MB3" firstAttribute="top" secondItem="NWp-Mv-sSX" secondAttribute="bottom" id="Ebb-WO-jAc"/>
+                            <constraint firstItem="QdO-zD-eaa" firstAttribute="centerY" secondItem="or2-a2-Vgb" secondAttribute="centerY" id="KDo-La-XVa"/>
+                            <constraint firstAttribute="trailing" secondItem="NWp-Mv-sSX" secondAttribute="trailing" id="Pks-4P-7MW"/>
+                            <constraint firstItem="NWp-Mv-sSX" firstAttribute="top" secondItem="or2-a2-Vgb" secondAttribute="top" id="XsW-Oh-Q3B"/>
+                            <constraint firstItem="NWp-Mv-sSX" firstAttribute="leading" secondItem="or2-a2-Vgb" secondAttribute="leading" id="f4N-ha-jNc"/>
+                            <constraint firstItem="QdO-zD-eaa" firstAttribute="centerX" secondItem="or2-a2-Vgb" secondAttribute="centerX" id="z6m-gd-Sa0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bDC-s5-Nfy"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="NWp-Mv-sSX" id="xaL-6t-DCN"/>
+                        <outlet property="noFoodDialog" destination="QdO-zD-eaa" id="gFv-Ee-MBT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AlO-xv-eH9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28" y="-331.48425787106447"/>
+        </scene>
+    </scenes>
+</document>

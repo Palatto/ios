@@ -10,41 +10,47 @@ import UIKit
 
 final class LoginPageController {
     
-    private let loginPageService: LoginPageService
+    private let loginPageService: LoginPageService = LoginPageService()
     private unowned let loginPageProtocol: LoginPageProtocol
     
     init(loginPageProtocol: LoginPageProtocol) {
         self.loginPageProtocol = loginPageProtocol
-        self.loginPageService = LoginPageService()
     }
 }
 
 extension LoginPageController {
     
     func tryToSignup(username: String) {
-        if(username == "") { //add validations
-            loginPageProtocol.showErrorMessage(title: "error", message: "Invalid password!")
+        let pattern = "^[-_+.a-zA-Z0-9!@#$%^*()]{1,18}$"
+        let matcher = NSPredicate(format:"SELF MATCHES[c] %@", pattern)
+        
+        if(!matcher.evaluate(with: username)) {
+            loginPageProtocol.showErrorMessage(title: "Error", message: "Invalid username entered. Please, try again.")
             return
         }
         
-        loginPageService.registerUser(username: username, completion: { [weak self] success, username in
+        loginPageService.registerUser(username: username, completionRegisterUser: { [weak self] success, username in
             self?.handleRegisterUser(success: success, username: username)
         })
     }
     
     func tryToLogin(username: String) {
-        if(username == "") { //add validations
-            loginPageProtocol.showErrorMessage(title: "error", message: "Invalid password!")
+        let pattern = "^[-_+.a-zA-Z0-9!@#$%^*()]{1,18}$"
+        let matcher = NSPredicate(format:"SELF MATCHES[c] %@", pattern)
+        
+        if(!matcher.evaluate(with: username)) {
+            loginPageProtocol.showErrorMessage(title: "Error", message: "Invalid username entered. Please, try again.")
             return
         }
         
-        loginPageService.checkUser(username: username, completion: { [weak self] success, username in
+        loginPageService.checkUser(username: username, completionCheckUser: { [weak self] success, username in
             self?.handleCheckUser(success: success, username: username)
         })
     }
 }
 
 extension LoginPageController {
+    
     fileprivate func handleRegisterUser(success: Bool, username: String) {
         if(success == true) {
             let promotionListViewController = UIStoryboard.init(name: "PromotionList", bundle: nil).instantiateViewController(withIdentifier: "PromotionList")
@@ -53,19 +59,23 @@ extension LoginPageController {
             loginPageProtocol.openViewController(controller: promotionListViewController)
         }
         else {
-            loginPageProtocol.showErrorMessage(title: "error", message: "invalid username")
+            loginPageProtocol.showErrorMessage(title: "Error", message: "Username already exists. Please, try again.")
         }
     }
     
     fileprivate func handleCheckUser(success: Bool, username: String) {
         if(success == true) {
+            let defaults = UserDefaults.standard
+            defaults.set(true, forKey: "isLoggedIn")
+            defaults.set(username, forKey: "username")
+            
             let promotionListViewController = UIStoryboard.init(name: "PromotionList", bundle: nil).instantiateViewController(withIdentifier: "PromotionList")
                 as! PromotionListViewController
             promotionListViewController.username = username
             loginPageProtocol.openViewController(controller: promotionListViewController)
         }
         else {
-            loginPageProtocol.showErrorMessage(title: "error", message: "invalid username")
+            loginPageProtocol.showErrorMessage(title: "Error", message: "Username does not exist. Please, try again.")
         }
     }
 }
