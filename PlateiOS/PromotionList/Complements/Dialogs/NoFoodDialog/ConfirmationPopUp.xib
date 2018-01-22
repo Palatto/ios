@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,7 +25,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" red="0.79215686269999996" green="0.23137254900000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.76862745099999996" green="0.1960784314" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="h2M-po-dKG"/>
                         <constraint firstItem="A2X-Dm-tll" firstAttribute="centerY" secondItem="Gjv-Jj-9jv" secondAttribute="centerY" id="pUD-US-pzT"/>
@@ -43,7 +43,7 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Google Talk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AwM-It-WO1" userLabel="Title">
                             <rect key="frame" x="0.0" y="1.5" width="76" height="17"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <color key="textColor" red="0.79215686269999996" green="0.23137254900000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="0.76862745099999996" green="0.1960784314" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="at" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JS1-HY-rUQ">
@@ -82,9 +82,7 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8df-rQ-x6K">
                     <rect key="frame" x="189" y="155" width="30" height="32"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                    <state key="normal" title="No">
-                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                    </state>
+                    <state key="normal" title="No"/>
                     <connections>
                         <action selector="negativeClicked:" destination="NwL-qF-ByK" eventType="touchUpInside" id="gMb-6X-Z9h"/>
                     </connections>
@@ -92,9 +90,7 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5E-VN-c4h">
                     <rect key="frame" x="243" y="155" width="30" height="32"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                    <state key="normal" title="Yes">
-                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                    </state>
+                    <state key="normal" title="Yes"/>
                     <connections>
                         <action selector="positiveClicked:" destination="NwL-qF-ByK" eventType="touchUpInside" id="cVE-CC-tWl"/>
                     </connections>

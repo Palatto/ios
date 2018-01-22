@@ -69,7 +69,7 @@ extension PromotionCell {
             buttonOutlet.setTitleColor(PlateColors.mainGreen, for: .normal)
         }else {
             buttonOutlet.setTitle("IS THE FOOD OVER?", for: .normal)
-            buttonOutlet.setTitleColor(PlateColors.darkerGray, for: .normal)
+            buttonOutlet.setTitleColor(PlateColors.mainLightBlue, for: .normal)
         }
     }
 }

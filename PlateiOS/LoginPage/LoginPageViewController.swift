@@ -42,7 +42,7 @@ class LoginPageViewController: UIViewController {
         didSet {
             signupButton.layer.cornerRadius = 5
             signupButton.layer.borderWidth = 2
-            signupButton.layer.borderColor = PlateColors.maintest.cgColor
+            signupButton.layer.borderColor = PlateColors.mainBlue.cgColor
         }
     }
     

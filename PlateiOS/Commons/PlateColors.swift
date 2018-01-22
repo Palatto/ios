@@ -12,7 +12,7 @@ struct PlateColors {
     private init() { }
     
     /// #CA3B33
-    // lobster: c43235
+    // New: C43235
     static let mainRed = #colorLiteral(red: 0.768627451, green: 0.1960784314, blue: 0.2078431373, alpha: 1)
     
     // White: E8EDF3
@@ -22,6 +22,9 @@ struct PlateColors {
     static let mainPurple = #colorLiteral(red: 0.1882352941, green: 0, blue: 0.1960784314, alpha: 1)
     
     static let mainBlue = #colorLiteral(red: 0.06666666667, green: 0.4941176471, blue: 0.8274509804, alpha: 1)
+    
+    //42C1F7
+    static let mainLightBlue = #colorLiteral(red: 0.6784313725, green: 0.8470588235, blue: 0.9019607843, alpha: 1)
     
     /// #F8AF2F
     static let mainYellow = #colorLiteral(red: 0.9725490196, green: 0.6862745098, blue: 0.1843137255, alpha: 1)
