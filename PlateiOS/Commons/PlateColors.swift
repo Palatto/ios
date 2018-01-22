@@ -11,8 +11,7 @@ import UIKit
 struct PlateColors {
     private init() { }
     
-    /// #CA3B33
-    // New: C43235
+    // C43235
     static let mainRed = #colorLiteral(red: 0.768627451, green: 0.1960784314, blue: 0.2078431373, alpha: 1)
     
     // White: E8EDF3
