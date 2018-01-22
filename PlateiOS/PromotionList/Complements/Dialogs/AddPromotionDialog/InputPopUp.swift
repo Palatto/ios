@@ -77,7 +77,7 @@ class InputPopUp: UIView {
     
     @IBOutlet weak var positiveButton: UIButton! {
         didSet {
-            positiveButton.setTitleColor(PlateColors.mainGreen, for: .normal)
+            positiveButton.setTitleColor(PlateColors.mainBlue, for: .normal)
         }
     }
     
