@@ -65,8 +65,8 @@ extension PromotionCell {
         time.text = promotionModel.getParsedDateTime()
         
         if(firstClick) {
-            buttonOutlet.setTitle("GOING", for: .normal)
-            buttonOutlet.setTitleColor(PlateColors.mainGreen, for: .normal)
+            buttonOutlet.setTitle("GO", for: .normal)
+            buttonOutlet.setTitleColor(PlateColors.mainBlue, for: .normal)
         }else {
             buttonOutlet.setTitle("IS THE FOOD OVER?", for: .normal)
             buttonOutlet.setTitleColor(PlateColors.mainLightBlue, for: .normal)
