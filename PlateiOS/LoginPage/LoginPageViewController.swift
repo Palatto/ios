@@ -40,18 +40,18 @@ class LoginPageViewController: UIViewController {
     
     @IBOutlet weak var signupButton: UIButton! {
         didSet {
-            signupButton.layer.cornerRadius = 15
+            signupButton.layer.cornerRadius = 5
             signupButton.layer.borderWidth = 2
-            signupButton.layer.borderColor = PlateColors.mainWhite.cgColor
+            signupButton.layer.borderColor = PlateColors.maintest.cgColor
         }
     }
     
     @IBOutlet weak var loginButton: UIButton! {
         didSet {
-            loginButton.backgroundColor = PlateColors.maintest
-            loginButton.layer.cornerRadius = 15
+         //   loginButton.backgroundColor = PlateColors.maintest
+            loginButton.layer.cornerRadius = 5
             loginButton.layer.borderWidth = 2
-            loginButton.layer.borderColor = PlateColors.maintest.cgColor
+           loginButton.layer.borderColor = PlateColors.mainWhite.cgColor
         }
     }
     

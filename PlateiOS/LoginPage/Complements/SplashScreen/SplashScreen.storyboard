@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo plate real.png" translatesAutoresizingMaskIntoConstraints="NO" id="pe9-dx-EZw">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plate png new" translatesAutoresizingMaskIntoConstraints="NO" id="pe9-dx-EZw">
                                 <rect key="frame" x="67" y="173.5" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="8xG-GG-eP2"/>
@@ -30,13 +30,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RmW-5T-OTb">
-                                <rect key="frame" x="140" y="381.5" width="96.5" height="62.5"/>
+                                <rect key="frame" x="139" y="381" width="96.5" height="62.5"/>
                                 <fontDescription key="fontDescription" name="LobsterTwo" family="Lobster Two" pointSize="50"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.76862745099999996" green="0.1960784314" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.76862745098039209" green="0.19607843137254902" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="RmW-5T-OTb" firstAttribute="centerX" secondItem="FVJ-Bg-Voy" secondAttribute="centerX" id="AcL-cI-yYO"/>
                             <constraint firstItem="RmW-5T-OTb" firstAttribute="top" secondItem="pe9-dx-EZw" secondAttribute="bottom" constant="-32" id="MiX-7E-4TI"/>
@@ -52,6 +52,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo plate real.png" width="142" height="144"/>
+        <image name="plate png new" width="141" height="143"/>
     </resources>
 </document>
