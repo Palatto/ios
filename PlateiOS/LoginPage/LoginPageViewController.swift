@@ -12,18 +12,13 @@ class LoginPageViewController: UIViewController {
     
     @IBOutlet weak var constraintOffset: NSLayoutConstraint!
     
-//    @IBOutlet weak var logoLabel: UILabel! {
-//        didSet{
-//            logoLabel.font = UIFont(name: "LobsterTwo-Regular", size: 51)
-//        }
-//    }
-    
     @IBOutlet weak var logoImage: UIImageView! {
         didSet {
             logoImage.tintColor = PlateColors.mainRed
             logoImage.backgroundColor = PlateColors.mainRed
         }
     }
+    
     @IBOutlet weak var usernameInput: UITextField! {
         didSet {
             let imageView = UIImageView(frame: CGRect(x: 10, y: 0, width: 20, height: 20))
@@ -48,10 +43,9 @@ class LoginPageViewController: UIViewController {
     
     @IBOutlet weak var loginButton: UIButton! {
         didSet {
-         //   loginButton.backgroundColor = PlateColors.maintest
             loginButton.layer.cornerRadius = 5
             loginButton.layer.borderWidth = 2
-           loginButton.layer.borderColor = PlateColors.mainWhite.cgColor
+            loginButton.layer.borderColor = PlateColors.mainWhite.cgColor
         }
     }
     
@@ -127,7 +121,7 @@ extension LoginPageViewController: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         if(usernameInput == textField) {
-            //constraintOffset.constant = -170
+            constraintOffset.constant = -200
             self.view.layoutIfNeeded()
         }
     }
@@ -139,7 +133,7 @@ extension LoginPageViewController: UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        //constraintOffset.constant = -90
+        constraintOffset.constant = -140
         self.view.layoutIfNeeded()
     }
 }

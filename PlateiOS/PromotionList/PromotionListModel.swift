@@ -8,21 +8,17 @@
 
 import Foundation
 
-// Our list model, one containing all the promotions models, all the data that we need for the table view.
 class PromotionListModel {
     
     var promotions: [PromotionModel]
     var promotionsStatus: [PromotionModel : Bool]
     
-    // Empty init, only to have one. We actually initialize it when we do the JSON
-    // parsing.
     init() {
         promotions = []
         promotionsStatus = [:]
     }
 }
 
-// Extension for organization
 extension PromotionListModel {
     
     public func clearPromotions() {
@@ -30,7 +26,6 @@ extension PromotionListModel {
         promotionsStatus.removeAll()
     }
     
-    // Funtion that returns the total number of items in the promotions array.
     public func quantityOfItems() -> Int {
         return promotions.count
     }

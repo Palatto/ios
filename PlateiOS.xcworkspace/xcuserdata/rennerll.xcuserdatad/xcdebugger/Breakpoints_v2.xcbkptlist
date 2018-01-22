@@ -9,125 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PlateiOS/PromotionList/PromotionModel.swift"
-            timestampString = "537601040.170591"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "getParsedDateTime()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PlateiOS/PromotionList/Complements/Cell/PromotionCell.swift"
-            timestampString = "537601040.171196"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "buttonAction(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "PlateiOS/PromotionList/PromotionListController.swift"
-            timestampString = "537601040.171549"
+            timestampString = "538353892.6523"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "handleCreateRequestGoing(success:promotionModel:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PlateiOS/PromotionList/Complements/PromotionListService.swift"
-            timestampString = "537601040.172074"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "createRequest(username:promotion_id:request_code:completionCreateRequest:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PlateiOS.PromotionListService.createRequest(username: Swift.String, promotion_id: Swift.String, request_code: Swift.String, completionCreateRequest: (Swift.Bool) -&gt; ()) -&gt; ()"
-                  moduleName = "PlateiOS"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rennerll/Desktop/plate-ios2/PlateiOS/PromotionList/Complements/PromotionListService.swift"
-                  timestampString = "537598594.21796"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "43"
-                  endingLineNumber = "43"
-                  offsetFromSymbolStart = "91">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Swift.String&gt;) -&gt; () in PlateiOS.PromotionListService.createRequest(username: Swift.String, promotion_id: Swift.String, request_code: Swift.String, completionCreateRequest: (Swift.Bool) -&gt; ()) -&gt; ()"
-                  moduleName = "PlateiOS"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rennerll/Desktop/plate-ios2/PlateiOS/PromotionList/Complements/PromotionListService.swift"
-                  timestampString = "537598594.221056"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "227">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PlateiOS/PromotionList/Complements/PromotionListService.swift"
-            timestampString = "537601040.1724809"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "createRequest(username:promotion_id:request_code:completionCreateRequest:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PlateiOS/PromotionList/Complements/PromotionListService.swift"
-            timestampString = "537601040.172917"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "createRequest(username:promotion_id:request_code:completionCreateRequest:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

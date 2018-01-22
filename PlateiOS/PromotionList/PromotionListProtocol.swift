@@ -8,7 +8,6 @@
 
 import UIKit
 
-// Protocol with the functions that the controller can call, ordering the view to execute
 protocol PromotionListProtocol : class {
     
     func showErrorMessage(title : String, message: String)

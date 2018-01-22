@@ -12,7 +12,6 @@ import Alamofire
 final class LoginPageService {
     
     private let path = "https://plate-heroku-database.herokuapp.com/"
-    //TODO: create development environment
     
     func registerUser(username: String, completionRegisterUser: @escaping (_ success: Bool, _ username: String) -> Void) {
         Alamofire.request(path + "users/create/" + username, method: .get, parameters: nil).responseString { response in

@@ -45,16 +45,13 @@ class PromotionCell: UITableViewCell {
     }
     
     @IBAction func buttonAction(_ sender: Any) {
-        // Allows user to confirm they are going and creates a distinction between confirmed xibs. Use guard let later.
         guard let promotionModel = self.promotionModel, let firstClick = self.firstClick else { return }
         self.respondToCellButtonClick?(promotionModel, firstClick)
     }
 }
 
-// Extension (for organization) that contains one single function
 extension PromotionCell {
     
-    // Function that init the cell optionals and update the outlet labels
     public func initCell(promotionModel: PromotionModel, firstClick: Bool, respondToCellButtonClick: @escaping (_ promotionModel: PromotionModel, _ firstClick: Bool) -> Void) {
         self.firstClick = firstClick
         self.promotionModel = promotionModel

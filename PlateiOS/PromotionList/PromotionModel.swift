@@ -8,7 +8,6 @@
 
 import Foundation
 
-// Our promotionModel, one for each event/promotion.
 class PromotionModel: Decodable, Hashable {
     
     var hashValue: Int {
@@ -25,7 +24,6 @@ class PromotionModel: Decodable, Hashable {
     var end_time: String = ""
     var location: String = ""
     
-    // The inits can be in the declaration of the class (not necesssary to have extension for this)
     init(promotion_id: String, title: String, start_time: String, end_time: String, location: String) {        
         self.promotion_id = promotion_id
         self.title = title
@@ -35,7 +33,6 @@ class PromotionModel: Decodable, Hashable {
     }
 }
 
-// Extension for organization
 extension PromotionModel {
     
     fileprivate func formatTime(time: String) -> String {
@@ -79,7 +76,7 @@ extension PromotionModel {
         let start = time.index(time.startIndex, offsetBy: 11)
         let end = (time.count != 19) ? time.index(time.endIndex, offsetBy: -8) : time.index(time.endIndex, offsetBy: -3)
         let range = start..<end
-        let timeSubstring = time[range]  // play
+        let timeSubstring = time[range]
         
         return String(timeSubstring)
     }

@@ -20,6 +20,7 @@ class InputPopUp: UIView {
             title.leftView = contentView
         }
     }
+    
     @IBOutlet weak var startTime: UITextField! {
         didSet {
             
