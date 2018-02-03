@@ -14,7 +14,7 @@ final class LoginPageService {
     private let path = "https://plate-heroku-database.herokuapp.com/"
     
     func registerUser(username: String, completionRegisterUser: @escaping (_ success: Bool, _ username: String) -> Void) {
-        Alamofire.request(path + "users/create/" + username, method: .get, parameters: nil).responseString { response in
+        Alamofire.request(path + "users/create/" + username, method: .post, parameters: nil).responseString { response in
             if let stringResponse = response.result.value {
                 let success = (stringResponse == "true") // see this
                 completionRegisterUser(success, username)

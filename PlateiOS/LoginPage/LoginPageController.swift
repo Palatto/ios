@@ -53,6 +53,10 @@ extension LoginPageController {
     
     fileprivate func handleRegisterUser(success: Bool, username: String) {
         if(success == true) {
+            let defaults = UserDefaults.standard
+            defaults.set(true, forKey: "isLoggedIn")
+            defaults.set(username, forKey: "username")
+            
             let promotionListViewController = UIStoryboard.init(name: "PromotionList", bundle: nil).instantiateViewController(withIdentifier: "PromotionList")
                 as! PromotionListViewController
             promotionListViewController.username = username

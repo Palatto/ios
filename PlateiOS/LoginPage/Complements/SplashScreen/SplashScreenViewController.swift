@@ -23,12 +23,11 @@ class SplashScreenViewController: UIViewController {
                     as! PromotionListViewController
                 promotionListViewController.username = username
                 self.openViewController(controller: promotionListViewController)
-            }else {
+            } else {
                 let loginPageViewController = UIStoryboard.init(name: "LoginPage", bundle: nil).instantiateViewController(withIdentifier: "LoginPage")
                     as! LoginPageViewController
                 self.openViewController(controller: loginPageViewController)
             }
-
         }
     }
     
