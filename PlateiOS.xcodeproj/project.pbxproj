@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		01241B911FB7B13C0043E206 /* PromotionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01241B901FB7B13C0043E206 /* PromotionModel.swift */; };
 		0145DC7720120CC6007EE658 /* LobsterTwo-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0145DC7620120CC6007EE658 /* LobsterTwo-Regular.otf */; };
+		0157D078202C395400374895 /* test2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0157D077202C395400374895 /* test2.swift */; };
 		01B7099320159D4C009ABCF5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B7099220159D4C009ABCF5 /* Default-568h@2x.png */; };
 		75A4688C13E414DDCF13C501 /* Pods_PlateiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 349EA05B303BB49710EBC5EA /* Pods_PlateiOS.framework */; };
 		DB1CE736200418AE00784ECF /* AddPromotionDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1CE735200418AD00784ECF /* AddPromotionDialogViewController.swift */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		01241B901FB7B13C0043E206 /* PromotionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionModel.swift; sourceTree = "<group>"; };
 		0145DC7620120CC6007EE658 /* LobsterTwo-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LobsterTwo-Regular.otf"; sourceTree = "<group>"; };
+		0157D077202C395400374895 /* test2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test2.swift; sourceTree = "<group>"; };
 		01B7099220159D4C009ABCF5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		349EA05B303BB49710EBC5EA /* Pods_PlateiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlateiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70B350CA7D606F91FC3F7F7A /* Pods-PlateiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlateiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlateiOS/Pods-PlateiOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				DB530B711FC3765200FCB77D /* PromotionListDataSource.swift */,
 				DB530B731FC3766200FCB77D /* PromotionListDelegate.swift */,
 				DB87C6AD1FD286A200C2B0C4 /* PromotionListService.swift */,
+				0157D077202C395400374895 /* test2.swift */,
 			);
 			path = Complements;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 				DBAB093C1FF15117008E0A2A /* PlateColors.swift in Sources */,
 				DBCAE8A520030F1A0050D476 /* ViewCreatable.swift in Sources */,
 				DB530B721FC3765200FCB77D /* PromotionListDataSource.swift in Sources */,
+				0157D078202C395400374895 /* test2.swift in Sources */,
 				01241B911FB7B13C0043E206 /* PromotionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
