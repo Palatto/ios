@@ -5,7 +5,6 @@
 //  Created by Renner Leite Lucena on 10/20/17.
 //  Copyright © 2017 Renner Leite Lucena. All rights reserved.
 //
-//rennerzao ousado
 
 import UIKit
 
