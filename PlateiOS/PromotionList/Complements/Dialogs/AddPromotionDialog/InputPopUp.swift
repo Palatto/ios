@@ -66,7 +66,45 @@ class InputPopUp: UIView {
             return
         }
         
-        let promotionModel = PromotionModel(promotion_id: "", title: title.text!, start_time: startTime.text!, end_time: endTime.text!, location: location.text!)
+        // Current format
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEEE, MMMM-dd h:mm a"
+        
+        // Get strings and put them on date objects
+        var dateObjectStart = dateFormatter.date(from: startTime.text!)
+        var dateObjectEnd = dateFormatter.date(from: endTime.text!)
+        
+        // All of this to get the current year
+        let currentDate = Date()
+        let calendar = Calendar.current
+        let currentYear = calendar.component(.year, from: currentDate)
+        
+        // This is to get the right difference in years between the start/end and current times.
+        let componentsStart = calendar.dateComponents([.year], from: dateObjectStart!)
+        let yearStart =  componentsStart.year!
+
+        let componentsEnd = calendar.dateComponents([.year], from: dateObjectEnd!)
+        let yearEnd =  componentsEnd.year!
+        
+        // Differences of years components.
+        var startYearDifference = DateComponents()
+        startYearDifference.year = currentYear - yearStart
+        
+        var endYearDifference = DateComponents()
+        endYearDifference.year = currentYear - yearEnd
+        
+        // We finally add such differences to the respective dates, making them right.
+        dateObjectStart = Calendar.current.date(byAdding: startYearDifference, to: dateObjectStart!)
+        dateObjectEnd = Calendar.current.date(byAdding: endYearDifference, to: dateObjectEnd!)
+        
+        // Change the format
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        
+        // Output strings on new format
+        let startTimeString = dateFormatter.string(from: dateObjectStart!)
+        let endTimeString = dateFormatter.string(from: dateObjectEnd!)
+        
+        let promotionModel = PromotionModel(promotion_id: "", title: title.text!, start_time: startTimeString, end_time: endTimeString, location: location.text!)
         positiveFunction?(promotionModel)
     }
     
@@ -124,11 +162,6 @@ extension InputPopUp: UITextFieldDelegate {
         textFieldDidBeginEditingFunction?()
     }
     
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        guard let text = textField.text else { return true }
-        let newLength = text.characters.count + string.characters.count - range.length
-        return newLength <= 18
-    }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         if(textField == startTime || textField == endTime) {
@@ -158,7 +191,7 @@ extension InputPopUp {
     
     @objc func donePressed() {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        dateFormatter.dateFormat = "EEEE, MMMM-dd h:mm a"
         
         if(startTime.isFirstResponder) {
             startTime.text = dateFormatter.string(from: datePickerStart.date)
