@@ -112,15 +112,14 @@ extension PromotionModel {
             dateFormatterOutput.dateFormat = "a"
             dateFormatterOutput.amSymbol = "AM"
             dateFormatterOutput.pmSymbol = "PM"
-            let symbolString = dateFormatterOutput.string(from: startDateObject)
             
             // Output hours with
-            dateFormatterOutput.dateFormat = "h:mm"
+            dateFormatterOutput.dateFormat = "h:mm a"
             let startTimeString = dateFormatterOutput.string(from: startDateObject)
             let endTimeString = dateFormatterOutput.string(from: endDateObject)
             
             // Complete string returned
-            return (dateString + " from " + startTimeString + " to " + endTimeString + " " + symbolString)
+            return (dateString + " from " + startTimeString + " to " + endTimeString)
         }else {
             // Error in parsing
             return "Monday from 0:00 to 0:00 AM"
