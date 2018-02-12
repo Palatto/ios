@@ -67,8 +67,19 @@ extension PromotionModel {
         let dateFormatterInput = DateFormatter()
         dateFormatterInput.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
         
-        let startDateObject = dateFormatterInput.date(from: start_time)
-        let endDateObject = dateFormatterInput.date(from: end_time)
+        var startDateObject = dateFormatterInput.date(from: start_time)
+        var endDateObject = dateFormatterInput.date(from: end_time)
+        
+        // Change this later - add 8 hours to solve timezone problem
+        if(startDateObject == nil || endDateObject == nil) {
+            dateFormatterInput.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            startDateObject = dateFormatterInput.date(from: start_time)
+            endDateObject = dateFormatterInput.date(from: end_time)
+        }else {
+            let calendar = Calendar.current
+            startDateObject = calendar.date(byAdding: .hour, value: +8, to: startDateObject!)
+            endDateObject = calendar.date(byAdding: .hour, value: +8, to: endDateObject!)
+        }
         
         if let startDateObject = startDateObject, let endDateObject = endDateObject {
             // Change format to desired output
