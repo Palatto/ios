@@ -59,7 +59,7 @@ extension PromotionCell {
         
         title.text = promotionModel.title
         location.text = promotionModel.location
-       // time.text = promotionModel.getParsedDateTime()
+        time.text = promotionModel.getParsedDateTime()
         
         if(firstClick) {
             buttonOutlet.setTitle("GO", for: .normal)

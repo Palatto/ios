@@ -53,10 +53,6 @@ extension LoginPageController {
     
     fileprivate func handleRegisterUser(success: Bool, username: String) {
         if(success == true) {
-<<<<<<< HEAD
-=======
-            
->>>>>>> e6c15bc344cec5dc89a88e670055819b19d45526
             let defaults = UserDefaults.standard
             defaults.set(true, forKey: "isLoggedIn")
             defaults.set(username, forKey: "username")
