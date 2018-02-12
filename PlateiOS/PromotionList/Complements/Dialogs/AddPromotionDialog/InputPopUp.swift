@@ -65,8 +65,15 @@ class InputPopUp: UIView {
             errorFunction?()
             return
         }
+        print("test1")
+        print("\(endTime.text)")
         
-        let promotionModel = PromotionModel(promotion_id: "", title: title.text!, start_time: startTime.text!, end_time: endTime.text!, location: location.text!)
+        let starttimestring = startTime.text!
+        let endtimestring = endTime.text!
+        print(starttimestring)
+        print(endtimestring)
+        
+        let promotionModel = PromotionModel(promotion_id: "", title: title.text!, start_time: starttimestring, end_time: endtimestring, location: location.text!)
         positiveFunction?(promotionModel)
     }
     
@@ -124,11 +131,6 @@ extension InputPopUp: UITextFieldDelegate {
         textFieldDidBeginEditingFunction?()
     }
     
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        guard let text = textField.text else { return true }
-        let newLength = text.characters.count + string.characters.count - range.length
-        return newLength <= 18
-    }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         if(textField == startTime || textField == endTime) {
@@ -158,7 +160,7 @@ extension InputPopUp {
     
     @objc func donePressed() {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        dateFormatter.dateFormat = "EEEE, MMMM-dd h:mm a"
         
         if(startTime.isFirstResponder) {
             startTime.text = dateFormatter.string(from: datePickerStart.date)
@@ -176,6 +178,8 @@ extension InputPopUp {
             
         }else {
             endTime.text = dateFormatter.string(from: datePickerEnd.date)
+             //dateFormatter.dateFormat = "EEEE, MMMM-dd h:mm a"
+            print("\(endTime.text)")
         }
         
         textFieldDidEndEditingFunction?()
